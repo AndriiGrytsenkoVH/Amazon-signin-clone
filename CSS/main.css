@@ -25,10 +25,18 @@ main{
     margin-top: 50px;
 }
 
+main h2{
+    font-size: medium;
+}
+
 #sign-in{
     padding: 20px;
     border: 1px solid lightgray;
     border-radius: 1%;
+}
+
+main *{
+    padding: 10px;
 }
 
 a{
@@ -40,14 +48,15 @@ a{
 .box{
     border: 1px solid black;
     width: 100%;
+    
 }
 
 #password-head{
 
 }
 
-form{
-
+#continue-button{
+    background-color: gold;
 }
 
 footer{
@@ -58,9 +67,18 @@ footer{
 footer hr{
     border-top: 1px solid gray;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-#footer-text{
-    
+footer div{
+    justify-content: space-around;
+    height: 50px;
+}
+
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
 }
     

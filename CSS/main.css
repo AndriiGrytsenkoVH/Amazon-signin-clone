@@ -7,7 +7,7 @@
 }
 
 html, body{
-    padding: 0;
+    height: 100%;
 }
 
 .column-center{
@@ -35,10 +35,6 @@ main h2{
     border-radius: 1%;
 }
 
-main *{
-    padding: 10px;
-}
-
 a{
     color: blue;
     text-decoration: none;
@@ -52,7 +48,12 @@ a{
 }
 
 #password-head{
+    display: flex;
+    justify-content: space-between;
+}
 
+#password-head p{
+    margin-left: 10px;
 }
 
 #continue-button{

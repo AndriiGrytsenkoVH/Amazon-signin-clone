@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+}
+
+html, body{
+    padding: 0;
+}
+
+.column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+     margin: 20px;
+}
+
+main{
+    margin-top: 50px;
+}
+
+#sign-in{
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 1%;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    
+}
+
+.box{
+    border: 1px solid black;
+    width: 100%;
+}
+
+#password-head{
+
+}
+
+form{
+
+}
+
+footer{
+    padding: 0;
+    width: 100%;
+}
+
+footer hr{
+    border-top: 1px solid gray;
+    margin-top: 40px;
+}
+
+#footer-text{
+    
+}
+    

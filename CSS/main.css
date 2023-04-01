@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-small;
+    font-size: 12px;
 }
 
 html{
@@ -25,13 +25,17 @@ body{
 
 main{
     width: 350px;
-    height: 400px;
-    margin-top: 10px;
+    height: 280px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
     /* justify-content: space-between; */
+}
+
+main > *{
+   margin: 5px; 
 }
 
 .column-center{
@@ -50,16 +54,29 @@ main h2{
     border-radius: 1%;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #sign-in-content{
     padding: 20px;
+    /* height: 100%; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a{
     color: blue;
     text-decoration: none;
     
+}
+
+#create-account-btn{
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
 }
 
 .box{

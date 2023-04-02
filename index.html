@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
-    <title>Document</title>
+    <script src="js/main.js" defer></script>
+    <title>Amazon-sign-in-clone</title>
 </head>
 <body>
     <img id="logo" src="https://via.placeholder.com/150x50?text=amazon i guess" alt="">
     <main>
         <div id="sign-in-border">
-            <div id="sign-in-content">
-                <h2>Sign In</h2>
-                <form action="https://www.google.com" method="post">
-                    <p>Email(phone or mobile accounts)</p>
-                    <p class="box"><input type="text" name="username" placeholder="Enter Email"></p>
-                    <div id="password-head">
-                        <p>Password</p>
-                        <p><a href="https://www.google.com">Forgot Password</a></p>
-                    </div>
-                    <p class="box"><input type="password" name="password" placeholder="Enter Password"></p>
-                    <p><button class="box" id="continue-button">Continue</button></p>
-    
-                </form>
-                <p><a href="https://www.google.com">>Need Help?</a></p>
-            </div>
+            <form id="sign-in-content" action="https://www.google.com" method="post">
+                <h1>Sign in</h1>
+                <label for="email">Email or mobile phone number</label>
+                <input type="email" name="email">
+                <button id="continue-button" type="submit">Continue</button>
+                <p>
+                    By continuing, you agree to Amazon's 
+                    <a href="https://www.google.com">Conditions of Use</a>
+                     and 
+                    <a href="https://www.google.com">Privacy Notice</a>.</p>
+                </p>
+                <a id="need-help-button" href="#">&#9656 Need Help?</a>
+                <div id="need-help-collapsible">
+                    <p><a href="https://www.google.com">Forgot your password?</a></p>
+                    <p><a href="https://www.google.com">Other issues with Sign-In</a></p>
+                </div>
+            </form>
         </div>
-        <p>New to Amazon?</p>
+        <div id="new-to-amazon">
+            <hr>
+            <p>New to Amazon?</p>
+            <hr>
+        </div>
         <button id="create-account-btn">Create Your Amazon Account</button>
     </main>
     <footer>
         <hr>
-        <div class="column-center">
+        <div id="footer-text">
             <div id="footer-links">
-                <p><a href="https://www.google.com">Conditions of use</a></p>
-                <p><a href="https://www.google.com">Privacy Notice</a></p>
-                <p><a href="https://www.google.com">Help</a></p>
+                <a href="https://www.google.com">Conditions of use</a>
+                <a href="https://www.google.com">Privacy Notice</a>
+                <a href="https://www.google.com">Help</a>
             </div>
-            <p>&copy 1996-2023, Amazon.com, Inc. or its affiliates </p>
+            <span>&copy 1996-2023, Amazon.com, Inc. or its affiliates</span>
         </div>
     </footer>
 </body>

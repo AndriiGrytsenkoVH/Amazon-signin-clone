@@ -1,11 +1,13 @@
+/* Defaults */
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 12px;
 }
 
+/* General flow */
 html{
     height: 100vh;
 }
@@ -14,116 +16,162 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-content: start; */
     height: 100vh
-    /* height: 100%; */
 }
 
+/* Links */
+a{
+    color: #1070c4;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d3a632;
+    text-decoration: underline;
+}
+
+/* Logo element */
 #logo{
     margin: 5px;
 }
 
+/* Content of the page */
 main{
-    width: 350px;
-    height: 280px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    /* justify-content: space-between; */
-}
-
-main > *{
-   margin: 5px; 
-}
-
-.column-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main h2{
-    font-size: medium;
 }
 
 #sign-in-border{
+    margin-top: 5px; 
+    margin-bottom: 5px; 
     border: 1px solid lightgray;
     border-radius: 1%;
-    width: 100%;
-    height: 100%;
+    width: 350px;
     display: flex;
     flex-direction: column;
 }
 
 #sign-in-content{
-    padding: 20px;
-    /* height: 100%; */
+    padding: 20px 26px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-a{
-    color: blue;
-    text-decoration: none;
-    
+#sign-in-content > *{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#create-account-btn{
-    border: 1px solid black;
-    width: 100%;
+#sign-in-content > h1{
+    font-weight: 400;
+    font-size: 28px;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 10px;
+}
+
+#sign-in-content > label{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#sign-in-content > input{
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
     height: 30px;
 }
 
-.box{
-    border: 1px solid black;
-    /* width: 100%; */
-    
-}
-
-#password-head{
-    display: flex;
-    justify-content: space-between;
-}
-
-#password-head p{
-    margin-left: 10px;
-}
-
 #continue-button{
-    background-color: gold;
+    border: 1px solid #91742d;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    cursor: pointer;
+    background: linear-gradient(0deg, #f0c14c 0%, #f6dea5 100%);
 }
 
-footer{
-    padding: 0;
+#continue-button:hover{
+    background: linear-gradient(0deg, #9b7d31 0%, #c5b286 100%);
+}
+
+#need-help-collapsible{
+    display: none;
+}
+
+#need-help-collapsible > p{
+    margin-top: 10px;
+}
+
+#new-to-amazon {
+    margin-top: 10px; 
+    margin-bottom: 14px; 
+    display: flex;
+    align-items: center;
     width: 100%;
-    /* height: 100%; */
+    color: #828282;
+}
+
+#new-to-amazon > p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#new-to-amazon > hr{
     flex-grow: 1;
-    /* margin-bottom: 40px; */
-    background: radial-gradient(circle at top center, rgb(240, 240, 240) 0%, rgba(255,255,255,1) 100%);
+    background-color: #828282;
+    height: 1px;
+}
+
+#create-account-btn{
+    border: 1px solid #b7b9bd;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    cursor: pointer;
+    background: linear-gradient(0deg, #dbdde1 0%, #fafafb 100%);
+}
+
+#create-account-btn:hover{
+    background: linear-gradient(0deg, #a9aaad 0%, #cecece 100%);
+}
+
+/* Footer styling */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 40px;
+    width: 100%;
+    flex-grow: 1;
+    background: radial-gradient(circle at top center, rgb(249, 249, 249) 0%, rgba(255,255,255,1) 100%);
 }
 
 footer hr{
-    /* border-top: 1px solid gray; */
-    padding-top: 1px;
-    background: radial-gradient(circle, rgba(212,212,212,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
-    /* margin-top: 40px; */
+    width: 100%;
+    padding-top: 2px;
+    background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     margin-bottom: 20px;
 }
 
-footer div{
-    justify-content: space-around;
-    height: 50px;
+#footer-text{
+    display: inline-block;
+}
+
+#footer-text > *{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #footer-links{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 200px;
+    justify-content: space-between;
 }
-    
